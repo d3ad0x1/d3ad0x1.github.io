@@ -5,6 +5,9 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Languages from './components/Languages';
+import Technologies from './components/Technologies';
+import ToolsEnvironment from './components/ToolsEnvironment';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Languages />
+      <Technologies />
+      <ToolsEnvironment />
       <Projects />
       <Contact />
       <Footer />
