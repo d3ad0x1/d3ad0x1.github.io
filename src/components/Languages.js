@@ -6,20 +6,20 @@ const Technologies = () => {
   const cards = [
     {
       icon: <FaReact />,
-      title: 'React & Node.js',
-      description: 'Frontend framework and backend runtime environment',
+      title: 'TypeScript & JavaScript',
+      description: 'Frontend and backend web development',
       gradient: 'bg-gradient-to-r from-blue-500 to-cyan-400'
     },
     {
       icon: <FaDatabase />,
-      title: 'Databases',
-      description: 'Relational database management (MySQL, SQLite3)',
+      title: 'Rust',
+      description: 'High-performance and memory-safe systems programming',
       gradient: 'bg-gradient-to-r from-green-400 to-green-600'
     },
     {
       icon: <FaRocket />,
-      title: 'DevOps',
-      description: 'Continuous integration, deployment, and version control',
+      title: 'PHP & Python',
+      description: 'Web backend development and scripting',
       gradient: 'bg-gradient-to-r from-purple-500 to-purple-700'
     }
   ];
