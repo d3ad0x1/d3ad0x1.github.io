@@ -4,13 +4,32 @@ export default function Navbar() {
       <h1 className="text-2xl font-bold text-primary">d3ad0x1.github.io</h1>
       <ul className="flex gap-6 text-lg">
         <li>
-          <a href="#about" className="hover:text-secondary transition-colors">About</a>
+          <a href="#languages" className="hover:text-secondary transition-colors">
+            Languages
+          </a>
         </li>
         <li>
-          <a href="#projects" className="hover:text-secondary transition-colors">Projects</a>
+          <a href="#technologies" className="hover:text-secondary transition-colors">
+            Technologies
+          </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-secondary transition-colors">Contact</a>
+          <a
+            href="#tools-environment"
+            className="hover:text-secondary transition-colors"
+          >
+            Tools & Environment
+          </a>
+        </li>
+        <li>
+          <a href="#projects" className="hover:text-secondary transition-colors">
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="hover:text-secondary transition-colors">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

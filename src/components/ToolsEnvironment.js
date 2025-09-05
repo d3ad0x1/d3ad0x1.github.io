@@ -1,17 +1,47 @@
 import React from 'react';
+import ToolsEnvironmentCard from './ToolsEnvironmentCard';
+import { FaLinux, FaNetworkWired, FaCogs } from 'react-icons/fa';
 
 const ToolsEnvironment = () => {
-  const items = ['VS Code', 'Git', 'Docker'];
+  const cards = [
+    {
+      icon: <FaLinux />,
+      title: 'Linux CLI',
+      description: 'Core environment for system administration and server management',
+      gradient: 'bg-gradient-to-r from-gray-700 to-gray-900'
+    },
+    {
+      icon: <FaNetworkWired />,
+      title: 'Networking Tools',
+      description: 'SSH, iptables, nmap, and troubleshooting network infrastructure',
+      gradient: 'bg-gradient-to-r from-blue-600 to-indigo-700'
+    },
+    {
+      icon: <FaCogs />,
+      title: 'Ansible & Automation',
+      description: 'Configuration management and automated deployments',
+      gradient: 'bg-gradient-to-r from-orange-500 to-red-600'
+    }
+  ];
 
   return (
-    <div className="w-1/3 p-6 border-2 rounded-xl bg-gray-800 border-purple-700 shadow-lg">
-      <h2 className="text-2xl font-bold mb-4 text-purple-700">Tools & Environment</h2>
-      <ul className="space-y-2">
-        {items.map((item, index) => (
-          <li key={index} className="text-purple-400">{item}</li>
+    <section
+      id="tools-environment"
+      className="py-20 px-6 max-w-[1400px] mx-auto bg-background"
+    >
+      <h2 className="text-4xl font-bold text-primary mb-10">Tools & Environment</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {cards.map((card, index) => (
+          <ToolsEnvironmentCard
+            key={index}
+            icon={card.icon}
+            title={card.title}
+            description={card.description}
+            gradient={card.gradient}
+          />
         ))}
-      </ul>
-    </div>
+      </div>
+    </section>
   );
 };
 

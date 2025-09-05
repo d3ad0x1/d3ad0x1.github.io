@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .arrow {
+      fill: #8b5cf6;
+      animation: bounce 1.2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(4px); }
+    }
+    @media (prefers-color-scheme: dark) {
+      .arrow { fill: #a78bfa; }
+    }
+  </style>
+  <polygon class="arrow" points="32,12 52,44 12,44"></polygon>
+</svg>

@@ -1,23 +1,28 @@
 import React from 'react';
-import TechnologyCard from './LanguagesCard';
-import { FaReact, FaDatabase, FaRocket } from 'react-icons/fa';
+import LanguagesCard from './LanguagesCard';
+import { FaLinux, FaPython, FaPhp, FaTerminal } from 'react-icons/fa';
 
-const Technologies = () => {
+const Languages = () => {
   const cards = [
     {
-      icon: <FaReact />,
-      title: 'TypeScript & JavaScript',
-      description: 'Frontend and backend web development',
+      icon: <FaLinux />,
+      title: 'Unix & Linux Systems',
+      description: 'System administration, server management, and shell environments',
       gradient: 'bg-gradient-to-r from-blue-500 to-cyan-400'
     },
     {
-      icon: <FaDatabase />,
-      title: 'Rust',
-      description: 'High-performance and memory-safe systems programming',
-      gradient: 'bg-gradient-to-r from-green-400 to-green-600'
+      icon: <FaTerminal />,
+      title: 'Shell scripting',
+      description: 'Automation, system tasks, and DevOps workflows',
+      gradient: 'bg-gradient-to-r from-green-500 to-emerald-600'
     },
     {
-      icon: <FaRocket />,
+      icon: (
+        <div className="flex gap-2">
+          <FaPhp />
+          <FaPython />
+        </div>
+      ),
       title: 'PHP & Python',
       description: 'Web backend development and scripting',
       gradient: 'bg-gradient-to-r from-purple-500 to-purple-700'
@@ -25,11 +30,14 @@ const Technologies = () => {
   ];
 
   return (
-    <div className="p-10 bg-gray-50 min-h-screen">
-      <h2 className="text-2xl font-bold mb-8 text-gray-800">Languages</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section
+      id="languages"
+      className="py-20 px-6 max-w-[1400px] mx-auto bg-background"
+    >
+      <h2 className="text-4xl font-bold text-primary mb-10">Languages</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {cards.map((card, index) => (
-          <TechnologyCard
+          <LanguagesCard
             key={index}
             icon={card.icon}
             title={card.title}
@@ -38,8 +46,8 @@ const Technologies = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Technologies;
+export default Languages;
