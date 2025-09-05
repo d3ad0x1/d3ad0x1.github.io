@@ -1,4 +1,4 @@
-name: Deploy static site to GitHub Pages
+name: Deploy React app to GitHub Pages
 
 on:
   push:
@@ -12,8 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Deploy public folder
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - run: npm install
+      - run: npm run build
+
+      - name: Deploy build folder
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./build
