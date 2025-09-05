@@ -3,19 +3,17 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - main  # каждый пуш в main будет деплоить сайт
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Получаем код репозитория
       - uses: actions/checkout@v3
 
-      # 2. Публикуем папку public на GitHub Pages
       - name: Deploy public folder
-        uses: peaceiris/actions-gh-pages@v7
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
