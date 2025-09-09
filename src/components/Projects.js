@@ -22,7 +22,7 @@ const Projects = () => {
   }, [username]); // excludeRepos теперь не нужен в зависимостях
 
   return (
-    <section id="projects" className="py-20 px-6 max-w-[1400px] mx-auto bg-background">
+    <section id="projects" className="py-12 px-6 max-w-[1400px] mx-auto bg-background">
       <h2 className="text-4xl font-bold text-primary mb-10">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {repos.map((repo) => (
