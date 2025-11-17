@@ -26,7 +26,7 @@ const Projects = () => {
       id="projects"
       className="py-12 px-6 max-w-[1400px] mx-auto bg-background"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-textMain mb-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-textHeading mb-6">
         Projects
       </h2>
       <p className="text-textMuted mb-8 max-w-2xl">
