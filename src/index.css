@@ -24,3 +24,30 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* ====== Кастомный скроллбар ====== */
+
+/* Firefox */
+html {
+  scrollbar-width: thin;                  /* тонкий скролл */
+  scrollbar-color: #9ca3af transparent;   /* ползунок / фон */
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  width: 8px;          /* ширина полосы */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* фон дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* серый ползунок */
+  border-radius: 9999px;     /* сильно скруглённый */
+  border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280; /* чуть темнее при наведении */
+}
