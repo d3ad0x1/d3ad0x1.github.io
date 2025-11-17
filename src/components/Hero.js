@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const MATRIX_CHARS = "01#@$%&*+=<>/?".split("");
-const MATRIX_COUNT = 220;
+const MATRIX_COUNT = 180;
 
 function getRandomChar() {
   return MATRIX_CHARS[Math.floor(Math.random() * MATRIX_CHARS.length)];
