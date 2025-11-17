@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const MATRIX_CHARS = "01#@$%&*+=<>/?".split("");
-const MATRIX_COUNT = 70;
+const MATRIX_COUNT = 120;
 
 function getRandomChar() {
   return MATRIX_CHARS[Math.floor(Math.random() * MATRIX_CHARS.length)];
@@ -25,13 +25,12 @@ export default function Hero() {
 
   return (
     <section className="relative flex flex-col items-center justify-center h-screen text-center px-6 bg-background overflow-hidden">
-      {/* === matrix background === */}
+      {/* === Matrix background === */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {Array.from({ length: MATRIX_COUNT }).map((_, i) => {
           const isPrimary = Math.random() < 0.4; // часть символов фиолетовые
           const left = Math.random() * 100; // позиция по X
-          const duration = 12 + Math.random() * 18; // 12–30s
-          const delay = -Math.random() * 20; // отрицательная задержка для рассинхронизации
+          const delay = -Math.random() * 15; // отрицательная задержка — все в разной фазе
 
           return (
             <span
@@ -41,7 +40,6 @@ export default function Hero() {
               }`}
               style={{
                 left: `${left}%`,
-                animationDuration: `${duration}s`,
                 animationDelay: `${delay}s`,
               }}
             >
@@ -51,7 +49,7 @@ export default function Hero() {
         })}
       </div>
 
-      {/* === контент поверх === */}
+      {/* === Контент поверх === */}
       <div className="relative z-10 flex flex-col items-center">
         <motion.h1
           initial={{ opacity: 0, y: 50 }}

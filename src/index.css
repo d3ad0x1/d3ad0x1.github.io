@@ -59,11 +59,11 @@ body::-webkit-scrollbar-thumb:hover {
     transform: translateY(-120%);
     opacity: 0;
   }
-  10% {
-    opacity: 0.6;
+  15% {
+    opacity: 0.5;
   }
-  90% {
-    opacity: 0.6;
+  85% {
+    opacity: 0.5;
   }
   100% {
     transform: translateY(120%);
@@ -73,13 +73,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 .matrix-char {
   position: absolute;
-  top: -10%;
+  top: -120%;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-  font-size: 0.75rem; /* text-xs */
-  letter-spacing: 0.1em;
+  font-size: 0.9rem; /* чуть крупнее */
+  letter-spacing: 0.15em;
   opacity: 0;
-  animation-name: matrix-fall;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: matrix-fall 14s linear infinite;
+  pointer-events: none;
 }
