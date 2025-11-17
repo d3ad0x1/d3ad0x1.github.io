@@ -4,9 +4,9 @@ module.exports = {
     extend: {
       colors: {
         primary: "#8b5cf6",
-        background: "#0f172a",
         secondary: "#a78bfa",
-        textGray: "#cbd5e1",
+        background: "#f5f5f5",   // светлый фон
+        textGray: "#1e293b",     // тёмный текст
       },
     },
   },
