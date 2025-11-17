@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full flex items-center justify-between p-6 bg-surface/90 backdrop-blur-sm z-50 border-b border-borderSoft">
-      <h1 className="text-2xl font-bold text-primary">
+      <h1 className="text-2xl font-bold text-textMuted">
         d3ad0x1.github.io
       </h1>
 

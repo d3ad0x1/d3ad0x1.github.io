@@ -22,7 +22,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6"
+        className="text-5xl md:text-6xl lg:text-7xl font-bold text-textMuted mb-6"
       >
         Hi, I'm d3ad0x1
       </motion.h1>
@@ -45,7 +45,7 @@ export default function Hero() {
       >
         <a
           href="#projects"
-          className="px-6 py-3 bg-primary text-surface rounded-lg font-semibold hover:bg-primary/90 transition shadow-md"
+          className="px-6 py-3 border border-borderSoft text-textMuted rounded-lg font-semibold hover:bg-borderSoft/30 transition shadow-sm hover:shadow-md"
         >
           View My Work
         </a>
