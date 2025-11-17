@@ -6,36 +6,33 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full flex items-center justify-between p-6 bg-background bg-opacity-80 backdrop-blur-sm z-50 border-b border-gray-300">
       <h1 className="text-2xl font-bold text-primary">
-        d3ad0x1.github.io
+          d3ad0x1.github.io
       </h1>
 
       {/* Desktop menu */}
-      <ul className="hidden md:flex gap-6 text-lg">
+      <ul className="hidden md:flex gap-6 text-sm lg:text-base">
         <li>
-          <a href="#languages" className="hover:text-secondary transition-colors">
+          <a href="#languages" className="text-textMuted hover:text-primary transition-colors">
             Languages
           </a>
         </li>
         <li>
-          <a href="#technologies" className="hover:text-secondary transition-colors">
+          <a href="#languages" className="text-textMuted hover:text-primary transition-colors">
             Technologies
           </a>
         </li>
         <li>
-          <a
-            href="#tools-environment"
-            className="hover:text-secondary transition-colors"
-          >
+          <a href="#languages" className="text-textMuted hover:text-primary transition-colors">
             Tools & Environment
           </a>
         </li>
         <li>
-          <a href="#projects" className="hover:text-secondary transition-colors">
+          <a href="#languages" className="text-textMuted hover:text-primary transition-colors">
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-secondary transition-colors">
+          <a href="#languages" className="text-textMuted hover:text-primary transition-colors">
             Contact
           </a>
         </li>
@@ -87,7 +84,7 @@ export default function Navbar() {
           <li>
             <a
               onClick={() => setOpen(false)}
-              href="#tools-environment"
+              href="#tools-environment" 
               className="px-6 block hover:text-secondary"
             >
               Tools & Environment

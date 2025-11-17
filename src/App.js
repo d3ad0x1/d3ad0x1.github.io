@@ -11,7 +11,7 @@ import ScrollArrow from "./components/ScrollArrow";
 
 function App() {
   return (
-    <div className="bg-background text-textGray font-sans">
+    <div className="min-h-screen bg-background text-textMain font-sans">
       <Navbar />
       <Hero />
       <Languages />

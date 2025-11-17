@@ -3,10 +3,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#8b5cf6",
-        secondary: "#a78bfa",
-        background: "#f5f5f5",   // светлый фон
-        textGray: "#1e293b",     // тёмный текст
+        // Акцент
+        primary: "#6366f1",      // мягкий индиго/фиолет
+        primarySoft: "#eef2ff",  // светлый фон под акцент
+
+        // База
+        background: "#f9fafb",   // общий фон страницы (очень светло-серый)
+        surface: "#ffffff",      // фон карточек / навбара
+
+        // Текст и границы
+        textMain: "#0f172a",     // основной текст (почти чёрный)
+        textMuted: "#6b7280",    // вторичный текст (подписи)
+        borderSoft: "#e5e7eb",   // границы карточек/секции
       },
     },
   },
