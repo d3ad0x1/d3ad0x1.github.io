@@ -29,8 +29,8 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         {Array.from({ length: MATRIX_COUNT }).map((_, i) => {
           const isPrimary = Math.random() < 0.4; // часть символов фиолетовые
-          const left = Math.random() * 100; // позиция по X
-          const delay = -Math.random() * 15; // отрицательная задержка — все в разной фазе
+          const left = Math.random() * 100;      // позиция по X
+          const delay = Math.random() * 10;      // задержка 0–10 c, без отрицательных
 
           return (
             <span
