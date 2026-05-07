@@ -4,24 +4,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Акценты
         primary: "#6366f1",
         primarySoft: "#eef2ff",
 
-        // База
-        background: "#f9fafb",   // общий фон страницы
-        surface: "#ffffff",      // фон карточек / навбара
+        background: "#f9fafb",
+        surface: "#ffffff",
 
-        // Текст
-        textMain: "#0f172a",     // основной текст
-        textMuted: "#6b7280",    // вторичный текст
-        textGray: "#0f172a",     // 👈 алиас, чтобы старый класс продолжал работать
-        textHeading: "#1e293b",  // 👈 новый цвет заголовков
+        textMain: "#0f172a",
+        textMuted: "#6b7280",
+        textGray: "#0f172a", 
+        textHeading: "#1e293b",
 
-        // Границы
         borderSoft: "#e5e7eb",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 };
